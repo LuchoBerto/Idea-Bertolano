@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Retro</title>
+
+    <!-- CSS only -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="home">
+    <h1 class="main">Mundo Retro</h1>
+
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Mundo Retro" height="35">
+                </a>
+                <div class="d-flex justify-content-end flex-reverse-row align-items-center" id="btn_session">
+                    &nbsp;
+                    <div class="btn_principal" id="loginBtn"> </div>
+                    &nbsp;
+                    <fieldset class="d-none" id="loginForm">
+                        <input class="form-control" type="text" name="username" id="user" placeholder="username(user1)">
+                        <input class="form-control" type="password" name="password" id="pass"
+                            placeholder="password(pass1)">
+                        <button class="btn_principal" id="ingresar">
+                            Acceder
+                        </button>
+                    </fieldset>
+                    &nbsp;
+                    <a class="btn_principal" id="irCarro" href="carro.html">
+                        CARRITO
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="soporte">
+
+        <div class="container-fluid filtro">
+            <div class="container d-flex justify-content-start">
+                <div class="order_btn">
+                    <a class="btn_principal" id="searchPrimary">
+                        BUSCAR
+                    </a>
+                    <a class="btn_principal" id="order">
+                        ORDEN de PRODUCTOS A-Z
+                    </a>
+                    <a class="btn_principal" id="price">
+                        ORDEN de precio menor a mayor
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="searchAll">
+            <div id="mainSearch">
+            </div>
+            <div id="subSearch">
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="main_list">
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <button class="btn-scrolltop btn-scrolltop-on" id="btn_scrolltop">
+            <img class="upArrow" src="./img/punta-de-flecha-hacia-arriba.png" alt="up-arrow">
+        </button>
+    </div>
+
+    <footer>
+        <div>
+            <p class="copyright">Luciano Bertolano©</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <script defer src="js/classes/producto.class.js"></script>
+    <script defer src="js/classes/catalogoProductos.class.js"></script>
+
+
+    <script defer src="js/busquedas.js"></script>
+    <script defer src="js/login.js"></script>
+    <script defer src="js/botones.js"></script>
+
+    <script defer src="js/main.js"></script>
+
+
+</body>
+
+</html>
